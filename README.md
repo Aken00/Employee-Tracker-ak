@@ -2,6 +2,9 @@
 
 
 ## Description 
+This app allows employers to view and update their employees and current roles with in their departments.
+An employer will be able to add departments, roles an employees with their corresponding information using inquirer and prompts.
+The user will be able to view the information from terminal thanks to integration of mysql2.
 
 ## User Story
 AS A business owner
@@ -47,7 +50,7 @@ follow prompts
 
 
 ## Project Link
-Visit deployed project at:
+Visit deployed project at:https://github.com/Aken00/Employee-Tracker-ak
 
 ## Video Link
 Visit demo video at:https://drive.google.com/file/d/1G7XfrmbnsNd5CdD1-Mv7f100wwu1H71h/view?usp=sharing
