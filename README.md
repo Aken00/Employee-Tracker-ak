@@ -28,12 +28,29 @@ WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
 
 ## Usage
+In the command line: 
+npm install inquirer
+npm install --save mysql2
+npm install console.table
 
-## Screen Shots 
+Recommended: Open now terminal window
+run:
+mysql -u root -p
+(password in server.js line 11)
+source schema.sql
+source seeds.sql
+quit
+
+run:
+node server.js
+follow prompts
+
 
 ## Project Link
+Visit deployed project at:
 
 ## Video Link
+Visit demo video at:https://drive.google.com/file/d/1G7XfrmbnsNd5CdD1-Mv7f100wwu1H71h/view?usp=sharing
 
 ## Questions
   * Github Username: Aken00
