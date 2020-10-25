@@ -19,7 +19,7 @@ const connection = mysql.createConnection({
 
     startApp();
   });
-  
+// What the user will first see once they start the app.
 function startApp() {
     inquirer
     .prompt({
@@ -67,7 +67,7 @@ function startApp() {
       }
     });
 }
-
+// All of the corresponding functions for adding to the database below
 function addDepartment() {
   inquirer.prompt({
         name:"department",
@@ -80,11 +80,10 @@ function addDepartment() {
               [answer.department],
               function(err, res) {
                 if (err) throw err;
+                // Shows the results to the user via console.table
                 console.table(res);
                 startApp()
               });
-            // logs the actual query being run
-            console.log(query.sql);
     });
 }
 
@@ -157,6 +156,7 @@ function addRole() {
     })
   };
 
+//With the inquirer package, we can pass the query into the method as an array.
   function updateEmployee() {
     inquirer
       .prompt([
@@ -193,6 +193,7 @@ function addRole() {
   }
   
   function viewRoles() {
+      
     let query = "SELECT * FROM role";
     connection.query(query, function(err, res) {
       if (err) throw err;
@@ -203,6 +204,7 @@ function addRole() {
   
   function viewEmployees() {
     console.log('Selecting all Employees... \n');
+    // Selects all employee data corresponding to names, title, id, role, and department.
     connection.query( 
     `SELECT employee.first_name, employee.last_name, role.title, role.salary, department.name 
     AS Dept_name, employee.manager_id AS manager
