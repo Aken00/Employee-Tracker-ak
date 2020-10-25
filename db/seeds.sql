@@ -9,13 +9,13 @@ VALUES
 
 INSERT INTO role (title, salary, department_id)
 VALUES
-    ('Sales Lead', 120000, 1), 
-    ('Salesperson', 90000, 1), 
-    ('Lead Engineer', 170000, 2), 
-    ('Software Engineer', 100000, 2), 
-    ('Accountant', 120000, 3), 
-    ('Legal Team Lead', 300000, 4), 
-    ('Lawyer', 200000, 4);
+    ('Sales Lead (1)', 120000, 1), 
+    ('Salesperson (2)', 90000, 1), 
+    ('Lead Engineer (3)', 170000, 2), 
+    ('Software Engineer (4)', 100000, 2), 
+    ('Accountant (5)', 120000, 3), 
+    ('Legal Team Lead (6)', 300000, 4), 
+    ('Lawyer(7)', 200000, 4);
 
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id) 
