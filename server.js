@@ -173,7 +173,7 @@ function addRole() {
       ])
       .then(function(answer) {
         connection.query('UPDATE employee SET role_id=? WHERE first_name= ?',
-        [answer.updateRole, answer.updateName, answer.employeeUpdate],
+        [answer.updateRole, answer.employeeUpdate],
         function(err, res) {
           if (err) throw err;
           console.log(res.affectedRows + ' employee inserted!\n');
