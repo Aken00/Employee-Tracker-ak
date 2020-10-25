@@ -163,12 +163,12 @@ function addRole() {
         {
           name: "employeeUpdate",
           type: "input",
-          message: "Pick an Employee to update?"
+          message: "Pick an Employee to update?",
         },
         {
           name: "updateRole",
           type: "input",
-          message: "What role would you like to switch too?"
+          message: "What role by id would you like to switch to?",
         }
       ])
       .then(function(answer) {
