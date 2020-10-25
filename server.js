@@ -80,7 +80,7 @@ function addDepartment() {
               [answer.department],
               function(err, res) {
                 if (err) throw err;
-                console.table(res.affectedRows + ' department inserted!\n');
+                console.table(res);
                 startApp()
               });
             // logs the actual query being run
@@ -113,7 +113,7 @@ function addRole() {
           [answer.roleName, answer.salaryTotal, answer.departmentID],
           function(err, res) {
             if (err) throw err;
-            console.table(res.affectedRows + ' role inserted!\n');
+            console.table(res);
             startApp();
           })
         })
@@ -151,7 +151,7 @@ function addRole() {
             [answer.first_name, answer.last_name, answer.roleID, answer.managerID],
             function(err, res) {
                 if (err) throw err;
-            console.log(res.affectedRows + ' employee inserted!\n');
+            console.log(res);
             startApp();
         })
     })
@@ -176,7 +176,7 @@ function addRole() {
         [answer.updateRole, answer.employeeUpdate],
         function(err, res) {
           if (err) throw err;
-          console.log(res.affectedRows + ' employee inserted!\n');
+          console.log(res);
           startApp();
         });
       });
